@@ -37,3 +37,14 @@ header .navbar {
     margin-top: 30px;
     margin-bottom: 30px; /* Added to ensure spacing is consistent */
 }
+
+@media (max-width: 768px) {
+    .profile-image {
+        max-width: 100px; /* Smaller size on mobile */
+    }
+
+    .main {
+        padding: 10px;
+        max-width: 100%; /* Full width on mobile */
+    }
+}
