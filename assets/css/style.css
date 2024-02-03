@@ -11,3 +11,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; /* Use the bold weight for headings */
 }
+
+.profile-image {
+    max-width: 150px; /* or any size that fits well in your layout */
+    margin: 0 auto; /* Center align the image */
+    display: block;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+}
+
