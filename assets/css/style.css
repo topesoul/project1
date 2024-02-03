@@ -20,3 +20,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
 }
 
+.main {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* Add responsive width */
+    max-width: 90%;
+    margin: 0 auto; /* Center align the main content */
+}
