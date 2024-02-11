@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
 
+/* Base styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
@@ -7,44 +8,95 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700; /* Use the bold weight for headings */
+/* Header styles */
+header .navbar {
+    margin-bottom: 30px;
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    padding: 0.3125rem 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; 
+}
+
+/* Main content styles */
+.main {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Profile image styles */
 .profile-image {
-    max-width: 150px; /* or any size that fits well in your layout */
-    margin: 0 auto; /* Center align the image */
+    max-width: 150px; 
+    margin: 0 auto;
     display: block;
     border: 3px solid #ddd;
     border-radius: 50%;
 }
 
-.main {
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    /* Add responsive width */
-    max-width: 90%;
-    margin: 0 auto; /* Center align the main content */
+/* Services section styles */
+#services {
+    padding: 40px 0;
 }
 
-header .navbar {
-    margin-bottom: 30px;
+/* Footer styles */
+footer {
+    background-color: #343a40; 
 }
 
-.footer {
-    margin-top: 30px;
-    margin-bottom: 30px; /* Added to ensure spacing is consistent */
+footer a.text-white,
+footer ul.list-inline li a {
+    color: #fff;
+    transition: color 0.3s;
 }
 
+footer a.text-white:hover,
+footer ul.list-inline li a:hover {
+    color: #1E90FF;
+}
+
+footer ul.nav,
+footer ul.list-inline {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+footer ul.list-inline li a {
+    font-size: 1.5rem;
+}
+
+footer .copyright-text {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
     .profile-image {
-        max-width: 100px; /* Smaller size on mobile */
+        max-width: 100px;
     }
 
-    .main {
+    .main,
+    img.profile-image {
+        max-width: 100%;
         padding: 10px;
-        max-width: 100%; /* Full width on mobile */
+        height: auto;
+    }
+
+    .container {
+        padding: 20px;
     }
 }
