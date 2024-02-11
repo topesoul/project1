@@ -100,3 +100,24 @@ footer .copyright-text {
         padding: 20px;
     }
 }
+
+/* Ensures the image is large and centered in its column */
+img.profile-image {
+    max-width: 90%; /* Adjust as needed, can go up to 100% */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem;
+}
+
+/* Adjusted the text alignment and size for better readability and flow */
+.service-text {
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    line-height: 1.6; /* More space between lines */
+}
+
+@media (max-width: 768px) {
+    /* Stack image and text on smaller screens */
+    .service-text, img.profile-image {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
