@@ -1,6 +1,6 @@
 # Soulifter - User Centric Milestone Project
 
-![Soulifter Responsive View](path/to/responsive-screenshot.png)
+![Soulifter Responsive View](path/to/responsive-screenshot.png) a
 
 ## Introduction
 
