@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TSoul - Rhythms That Resonate</title>
+    <title>TSoul - Enquiries or Contact Me</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -32,28 +32,33 @@
         </div>
     </header>
     <!-- Main Content Section -->
-    <main class="container my-5">
-        <section class="contact-section">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h1 class="text-center">Contact Me</h1>
-                    <p class="text-center">If you would like to get in touch for music bookings or data analytics consulting, please use the form below or email me directly at info@tsoulofficial.com.</p>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
-                </div>
+    <main class="container mt-5 mb-5"> <!-- Added bottom margin -->
+        <h1>Get in Touch</h1>
+        <form action="your-server-side-script" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
             </div>
-        </section>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="inquiryType">Inquiry Type</label>
+                <select class="form-control" id="inquiryType" name="inquiryType">
+                    <option>Music Booking</option>
+                    <option>Data Analysis Consultation</option>
+                    <option>General Inquiry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </main>
+    
     <!-- Footer Section -->
     <footer class="bg-dark text-white">
         <div class="container py-4">
