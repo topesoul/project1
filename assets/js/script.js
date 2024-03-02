@@ -19,3 +19,14 @@ if (document.getElementById("parallaxElementId")) {
   // Add the scroll event listener
   window.addEventListener("scroll", handleScroll);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var form = document.getElementById('mailingListSignup');
+  form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+  }, false);
+});
