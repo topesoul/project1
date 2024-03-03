@@ -1,123 +1,351 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Grenze+Gotisch:wght@100..900&family=Sansita+Swashed:wght@300..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 /* Base styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 400;
+  background-image: url('../images/c.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  line-height: 1.6; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Overlay for background image to improve text readability */
+body::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  z-index: -1;
 }
 
 /* Header styles */
 header .navbar {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  background: rgba(52, 58, 64, 0.8); /* Semi-transparent background for navbar */
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    padding: 0.3125rem 0;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+.navbar-brand, .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700; 
+  font-family: 'Grenze Gotisch', serif;
+  font-weight: 700;
+  color: #ffcc00;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Grenze Gotisch', serif;
+  font-weight: 700;
+  color: chocolate;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* Main content styles */
 .main {
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    max-width: 90%;
-    margin: 0 auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* CTA Button */
+.btn-primary {
+  font-size: 1.2rem; /* Larger font size for CTA button */
+  padding: 10px 20px; /* Larger padding for a bigger button */
+  background-color: #1eceff; /* Bright blue to stand out */
+  border: none; /* Removes the default border */
+  box-shadow: 0 4px 8px rgba(50, 50, 93, 0.2); /* Soft shadow for 3D effect */
+}
+
+.btn-primary:hover {
+  background-color: #17a2b8; /* A slightly darker blue on hover */
+  box-shadow: 0 6px 12px rgba(50, 50, 93, 0.3); /* Larger shadow on hover for depth effect */
+}
+
+/* Smooth Transitions and Hover Effects */
+a, .btn, .navbar-brand, .nav-link {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: #1eceff;
+  text-decoration: underline;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Box Shadows for Depth */
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+/* Custom shadow for interactive elements */
+.btn, .card {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.btn:hover, .card:hover {
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+/* Consistency in Interactive Elements */
+.form-control, .btn, .navbar-toggler {
+  border-radius: 0.25rem;
+}
+
+/* Style adjustments for forms */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+form {
+  border: 1px solid #ccc; /* Add border for visual separation */
+  padding: 20px; /* Add padding for internal spacing */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  background-color: rgba(156,205,207,0.35); /* Slightly transparent background for form */
+}
+
+/* Utility Classes for Margin and Padding */
+.mt-2, .my-2, .px-3, .py-4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* Profile image styles */
 .profile-image {
-    max-width: 150px; 
-    margin: 0 auto;
-    display: block;
-    border: 3px solid #ddd;
-    border-radius: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid #ddd;
+  border-radius: 50%;
 }
 
 /* Services section styles */
 #services {
-    padding: 40px 0;
+  font-family: 'Bellota Text', cursive;
+  color: midnightblue;
+  background-color: rgba(250, 240, 230, 0.895);
+  padding: 50px 0;
+}
+
+#services h2, .services-icons h5, #services .testimonial {
+  color: #343a40;
+  font-style: italic;
+  padding: 20px;
+  background-color: #ffffff5e;
+  border-left: 5px solid #007bff95;
+}
+
+#services .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#services .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
 /* Footer styles */
 footer {
-    background-color: #343a40; 
+  background-color: #343a40;
 }
 
-footer a.text-white,
+footer a.text-white, 
 footer ul.list-inline li a {
-    color: #fff;
-    transition: color 0.3s;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+/* Footer links hover color */
+#site-footer a:hover {
+  color: yellow;
+}
+
+/* Nav links hover effect */
+.nav-link:hover {
+  background-color: rgb(137, 147, 4);
+  border: 2px solid white;
 }
 
 footer a.text-white:hover,
 footer ul.list-inline li a:hover {
-    color: #1E90FF;
+    color: #1eceff;
 }
 
 footer ul.nav,
 footer ul.list-inline {
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 footer ul.list-inline li a {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 footer .copyright-text {
-    font-size: 0.75rem;
-    margin-top: 1rem;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .profile-image {
-        max-width: 100px;
-    }
-
-    .main,
-    img.profile-image {
-        max-width: 100%;
-        padding: 10px;
-        height: auto;
-    }
-
-    .container {
-        padding: 20px;
-    }
+  font-size: 0.75rem;
+  margin-top: 1rem;
 }
 
 /* Ensures the image is large and centered in its column */
 img.profile-image {
-    max-width: 90%; /* Adjust as needed, can go up to 100% */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 1rem;
+  max-width: 90%; 
+  height:auto;
+  margin-bottom: 1rem;
 }
 
-/* Adjusted the text alignment and size for better readability and flow */
-.service-text {
-    font-size: 1.1rem; /* Slightly larger font for readability */
-    line-height: 1.6; /* More space between lines */
-}
-
+/* Responsive styles for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Stack image and text on smaller screens */
-    .service-text, img.profile-image {
-        max-width: 100%;
-        margin-bottom: 2rem;
-    }
+  .profile-image {
+    max-width: 100px;
+  }
+
+  img.profile-image {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 2rem; /* Stack image and text on smaller screens */
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .service-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Responsive styles for tablets (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .profile-image {
+    max-width: 150px;
+  }
+
+  img.profile-image {
+    max-width: 100%;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .service-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Responsive styles for desktops and larger devices (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .profile-image {
+    max-width: 200px;
+  }
+
+  img.profile-image {
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .service-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+/* Music Page Specific Styles */
+#music-content {
+  background-image: url('../images/tsoulprofileimage.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+#music-content h2 {
+  color: #e7d33c;
+  text-shadow: -1px -1px 0 #000, 1px 1px 0 #fff;
+}
+
+#music-content:hover {
+  opacity: 1;
+}
+
+#music-content .about-artist, 
+#music-content .spotify-embed,
+#music-content .featured-video {
+  padding: 50px 0;
+  margin: 50px 0;
+  color: white; 
+}
+
+/* Media Player Styling */
+.spotify-player {
+  border-radius: 12px; /* Rounded corners for the player */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the player */
+}
+
+.reverbnation-widget {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* Additional styles and adjustments */
+.img-fluid, .rounded, .carousel-item, .service-text {
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+.carousel {
+  margin-top: 20px;
 }
