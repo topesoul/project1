@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Embark on a sonic adventure with TSoul, a unique blend of R&B, Soul, and analytics.">
+    <meta name="keywords" content="TSoul, Music, Data Analytics, R&B, Soul, Artist">
     <title>TSoul - Rhythms That Resonate</title>
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS for responsive and modern UI components -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Font Awesome -->
+    <!-- Font Awesome for rich iconography -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- Custom Styles -->
+    <!-- Custom Styles for personalized styling -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts for diverse and accessible typography -->
     <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap' rel='stylesheet'>
+    <meta name="description" content="Dive into TSoul's World of Music where every note resonates with the heart's deepest narratives. Explore the power of music with TSoul.">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section for site navigation -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">TSoul</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -31,11 +35,11 @@
             </ul>
         </div>
     </header>
-    <!-- Main Content Section -->
+    <!-- Main Content Section for primary site content -->
     <main class="container mt-5">
         <section class="text-center">
             <h1>Welcome to TSoul's World</h1>
-            <img src="assets/images/tsoul free img.jpeg" alt="TSoul Profile Image" class="rounded-circle profile-image">
+            <img src="assets/images/tsoulheroimg.jpg" alt="TSoul Profile Image" class="profile-image">            
             <p class="mt-4">Embark on a sonic adventure with TSoul, where every note is an echo of the heart's deepest narratives. 
             Here, melodies are not just heard; they are felt. Dive into an experience that transcends the ordinary and celebrates 
             the extraordinary power of music to move, to soothe, and to exhilarate.</p>
@@ -59,28 +63,30 @@
                 </form>
             </div>
         </section>
-            <section class="philosophy">
-                <br>
-                <h3>My Philosophy</h3>
-                <p>At the heart of my work lies a commitment to excellence, whether it's harmonizing data to unveil insights or composing soothing melodies that resonate from within. 
-                   Join me on this voyage where every chord is a discovery and every insight, a step towards harmony.
-                </p>
-            <p class="lead"><em>Soulful Sounds from the Soulifter...</em>
-            </p>
-            <iframe 
-            title="TSoul Music Player" 
-            width="100%" 
-            height="265" 
-            scrolling="no" 
-            frameborder="no" 
-            src="https://www.reverbnation.com/widget_code/html_widget/artist_2730313?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_2730313&pwc[size]=small&pwc[color]=dark" 
-            style="min-width:100%;max-width:100%;">
-            </iframe>
+        <section class="philosophy mt-5 text-center">
+            <h3>My Philosophy</h3>
+            <p>At the heart of my work lies a commitment to excellence, whether it's harmonizing data to unveil insights or 
+               composing soothing melodies that resonate from within. 
+               Join me on this voyage where every chord is a discovery and every insight, a step towards harmony.
+            </p>  
         </section>
-    </main>
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white">
-        <div class="container py-4">
+        <!-- Spotify Embed Section -->
+        <section class="row justify-content-center py-5 my-5">
+            <div class="col-md-8 text-center">
+                <h3 class="mb-4">Soulful Vibes!</h3>
+                <p><small>Soulful Sounds from the Soulifter...</small></p> 
+                <div>
+                    <iframe class="spotify-player" src="https://open.spotify.com/embed/artist/7nlGYCN92Y2aNRf7ZnM37E?utm_source=generator&theme=0" 
+                    width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="TSoul Spotify Player">
+                </iframe>
+                </div>
+            </div>
+        </section>
+    </main>   
+    <!-- Footer Section for site-wide footer content -->
+    <footer class="bg-dark text-white pt-4 pb-2" id="site-footer">
+        <div class="container py-4 ">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
                     <ul class="nav justify-content-center mb-3">
@@ -116,6 +122,12 @@
                                 <span class="sr-only">Spotify</span>
                             </a>
                         </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/topeakingbala" target="_blank">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
                     </ul>
                     <small class="copyright-text">
                         &copy; 2024 TSoul Music & Consulting. All Rights Reserved.
@@ -128,18 +140,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript for Form Validation -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var form = document.getElementById('mailingListSignup');
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    </script>
+    <script src="assets/js/script.js"></script> <!-- External JavaScript -->
 </body>
 </html>
