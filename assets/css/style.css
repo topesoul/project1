@@ -6,45 +6,25 @@ body {
   font-size: 1.3rem;
   color: #ffffff;
   font-weight: 400;
-  background-image: url('../images/c.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/c.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  line-height: 1.6; 
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* Overlay for background image to improve text readability */
-body::after {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; 
-  z-index: -1;
-}
-
 /* Header styles */
 header .navbar {
   margin-bottom: 30px;
-  background: rgba(52, 58, 64, 0.8); /* Semi-transparent background for navbar */
+  background: rgba(52, 58, 64, 0.8);
 }
 
 .navbar-brand, .navbar-nav .nav-link {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Grenze Gotisch', serif;
-  font-weight: 700;
-  color: #ffcc00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* Typography */
@@ -64,21 +44,21 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   max-width: 90%;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* CTA Button */
 .btn-primary {
-  font-size: 1.2rem; /* Larger font size for CTA button */
-  padding: 10px 20px; /* Larger padding for a bigger button */
-  background-color: #1eceff; /* Bright blue to stand out */
-  border: none; /* Removes the default border */
-  box-shadow: 0 4px 8px rgba(50, 50, 93, 0.2); /* Soft shadow for 3D effect */
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #1eceffd4;
+  border: none;
+  box-shadow: 0 4px 8px rgba(50, 50, 93, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: #17a2b8; /* A slightly darker blue on hover */
-  box-shadow: 0 6px 12px rgba(50, 50, 93, 0.3); /* Larger shadow on hover for depth effect */
+  background-color: #17a2b8;
+  box-shadow: 0 6px 12px rgba(50, 50, 93, 0.3);
 }
 
 /* Smooth Transitions and Hover Effects */
@@ -129,11 +109,11 @@ a, .btn, .navbar-brand, .nav-link {
 }
 
 form {
-  border: 1px solid #ccc; /* Add border for visual separation */
-  padding: 20px; /* Add padding for internal spacing */
-  border-radius: 5px; /* Rounded corners for a softer look */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  background-color: rgba(156,205,207,0.35); /* Slightly transparent background for form */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: rgba(156,205,207,0.35);
 }
 
 /* Utility Classes for Margin and Padding */
@@ -148,26 +128,32 @@ form {
 
 /* Profile image styles */
 .profile-image {
-  max-width: 100px;
+  max-width: 150px;
   margin: 0 auto;
   display: block;
   border: 3px solid #ddd;
   border-radius: 50%;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* Services section styles */
 #services {
   font-family: 'Bellota Text', cursive;
-  color: midnightblue;
-  background-color: rgba(250, 240, 230, 0.895);
+  color: slateblue;
+  background-color: rgba(250, 240, 230, 0.841);
   padding: 50px 0;
 }
 
 #services h2, .services-icons h5, #services .testimonial {
-  color: #343a40;
+  color: brown;
   font-style: italic;
   padding: 20px;
-  background-color: #ffffff5e;
+  background-color:rgba(240, 255, 255, 0.403);
   border-left: 5px solid #007bff95;
 }
 
@@ -189,30 +175,25 @@ footer {
   background-color: #343a40;
 }
 
-footer a.text-white, 
-footer ul.list-inline li a {
+footer a.text-white, footer ul.list-inline li a {
   color: #ffffff;
   transition: color 0.3s;
 }
 
-/* Footer links hover color */
 #site-footer a:hover {
   color: yellow;
 }
 
-/* Nav links hover effect */
 .nav-link:hover {
   background-color: rgb(137, 147, 4);
   border: 2px solid white;
 }
 
-footer a.text-white:hover,
-footer ul.list-inline li a:hover {
+footer a.text-white:hover, footer ul.list-inline li a:hover {
     color: #1eceff;
 }
 
-footer ul.nav,
-footer ul.list-inline {
+footer ul.nav, footer ul.list-inline {
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -226,81 +207,6 @@ footer .copyright-text {
   margin-top: 1rem;
 }
 
-/* Ensures the image is large and centered in its column */
-img.profile-image {
-  max-width: 90%; 
-  height:auto;
-  margin-bottom: 1rem;
-}
-
-/* Responsive styles for mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
-  .profile-image {
-    max-width: 100px;
-  }
-
-  img.profile-image {
-    max-width: 100%;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 2rem; /* Stack image and text on smaller screens */
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  .service-text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-}
-
-/* Responsive styles for tablets (min-width: 769px and max-width: 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .profile-image {
-    max-width: 150px;
-  }
-
-  img.profile-image {
-    max-width: 100%;
-    padding: 15px;
-    height: auto;
-    margin-bottom: 2rem;
-  }
-
-  .container {
-    padding: 30px;
-  }
-
-  .service-text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-}
-
-/* Responsive styles for desktops and larger devices (min-width: 1025px) */
-@media (min-width: 1025px) {
-  .profile-image {
-    max-width: 200px;
-  }
-
-  img.profile-image {
-    max-width: 100%;
-    padding: 20px;
-    height: auto;
-    margin-bottom: 2rem;
-  }
-
-  .container {
-    padding: 40px;
-  }
-
-  .service-text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-}
 /* Music Page Specific Styles */
 #music-content {
   background-image: url('../images/tsoulprofileimage.jpg');
@@ -320,18 +226,16 @@ img.profile-image {
   opacity: 1;
 }
 
-#music-content .about-artist, 
-#music-content .spotify-embed,
-#music-content .featured-video {
+#music-content .about-artist, #music-content .spotify-embed, #music-content .featured-video {
   padding: 50px 0;
   margin: 50px 0;
-  color: white; 
+  color: white;
 }
 
 /* Media Player Styling */
 .spotify-player {
-  border-radius: 12px; /* Rounded corners for the player */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the player */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .reverbnation-widget {
@@ -348,4 +252,63 @@ img.profile-image {
 
 .carousel {
   margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 100px;
+  }
+
+  img.profile-image {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Ensures the image is large and centered in its column */
+img.profile-image {
+  max-width: 90%; 
+  height:auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* Stack image and text on smaller screens */
+  .service-text, img.profile-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+  .service-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+@media (min-width: 1025px) {
+  .profile-image {
+    max-width: 200px;
+  }
+
+  img.profile-image {
+    max-width: 100%;
+    padding: 20px;
+    height:auto;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .service-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
 }
