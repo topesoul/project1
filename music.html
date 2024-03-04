@@ -1,105 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TSoul - Rhythms That Resonate</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">TSoul</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="music.html">Music</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <main class="container mt-4">
-
-        <section class="about-artist my-5">
-          <h2 class="mb-4 text-center">The Soul Behind TSoul</h2>    
-            <p class="text-justify">Growing up with the harmonies of James Brown and the soulful melodies of Sam Cooke, TSoul, legally known as 
-            Akingbala Temitope Samuel, was destined for a life interwoven with music and creativity. His journey through 
-            the church choir to the grand stages of "MTN Project Fame West Africa" has shaped a voice that resonates with 
-            both passion and precision.
-        </p>
-        <section class="spotify-embed my-5" style="display: flex; justify-content: space-around; align-items: center;"> 
-            <div>
-                <h3 class="mb-4 text-center">Listen on Spotify</h3>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7nlGYCN92Y2aNRf7ZnM37E?utm_source=generator&theme=0" 
-                width="400" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TSoul - Rhythms That Resonate</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-header">
+            <a class="navbar-brand" href="index.html">TSoul</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <!-- Removed the hero image div -->
-        </section>
-        </section>
-    
-        <section class="featured-video my-5"> 
-          <h3 class="mb-4 text-center">Featured Video</h3>
-          <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhQFPuLJZA4" title="T-Soul Music Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </section>
-    
-      </main>
-    <footer class="bg-dark text-white">
-        <div class="container py-4">
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <ul class="nav justify-content-center mb-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="music.html">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="list-inline mb-3">                        
-                        <li class="list-inline-item">
-                            <a href="https://twitter.com/tsoulsings" target="_blank">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
+        </header>
+        <!-- Main Content Section -->
+        <main class="container mt-4" id="music-content">
+            <!-- About Artist Section -->
+            <hr>
+            <section class="row justify-content-center text-white py-5 my-5">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">The Soul Behind TSoul</h2>
+                    <p class="text-justify">Growing up with the harmonies of James Brown and the soulful melodies of Sam Cooke, 
+                        TSoul, legally known as Akingbala Temitope Samuel, was destined for a life interwoven with music and creativity. 
+                        His journey through the church choir to the grand stages of "MTN Project Fame West Africa" has shaped a voice that resonates with both passion and precision.
+                    </p>
+                    <!-- Song Cover Images -->
+                    <div class="song-cover-gallery">
+                        <!-- Flawless Song Cover -->
+                        <div class="text-center mb-4">
+                            <a href="https://social.tunecore.com/linkShare?linkid=FFl5Xq1Z8st6e7CJS410Hw" target="_blank" title="Listen to Flawless by TSoul">
+                                <img src="assets/images/art.jpg" alt="Cover art for the song Flawless by TSoul" class="img-fluid">
                             </a>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/tsoulofficial" target="_blank">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
+                        </div>
+                        <!-- Free Song Cover -->
+                        <div class="text-center mb-4">
+                            <a href="https://social.tunecore.com/linkShare?linkid=fB1tgOfvFSpN_UNe_Fjn8A" target="_blank" title="Listen to Free by TSoul">
+                                <img src="assets/images/Gum Body Art.jpg" alt="Cover art for the song Gum Body by TSoul" class="img-fluid">
                             </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://open.spotify.com/artist/7nlGYCN92Y2aNRf7ZnM37E" target="_blank">
-                                <i class="fab fa-spotify" aria-hidden="true"></i>
-                                <span class="sr-only">Spotify</span>
+                        </div>
+                        <!-- Time Machine Song Cover -->
+                        <div class="text-center mb-4">
+                            <a href="LINK_TO_TIME_MACHINE_SONG" target="_blank" title="Listen to Time Machine by TSoul">
+                                <img src="assets/images/tsoul time machine.JPG" alt="Cover art for the song Time Machine by TSoul" class="img-fluid">
                             </a>
-                        </li>
-                    </ul>
-                    <small class="copyright-text">
-                        &copy; 2024 TSoul Music & Consulting. All Rights Reserved.
-                    </small>
+                        </div>
+                        <!-- Tender Light Song Cover -->
+                        <div class="text-center mb-4">
+                            <a href="LINK_TO_TENDER_LIGHT_SONG" target="_blank" title="Listen to Tender Light by TSoul">
+                                <img src="assets/images/tsoul tender light.JPG" alt="Cover art for the song Tender Light by TSoul" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Additional Song Cover -->
+                        <div class="text-center mb-4">
+                            <a href="LINK_TO_ADDITIONAL_SONG" target="_blank" title="Listen to Only You by TSoul">
+                                <img src="assets/images/tsoul only you.jpg" alt="Cover art for Only You by TSoul" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Spotify Embed Section -->
+    <section class="row justify-content-center py-5 my-5">
+        <div class="col-md-8 text-center">
+            <h3 class="mb-4">Listen on Spotify, Reverbnation</h3>
+            <iframe class="reverbnation-widget" src="https://www.reverbnation.com/widget_code/html_widget/artist_2730313?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_2730313&pwc[size]=small&pwc[color]=dark" width="100%" height="265" scrolling="no" frameborder="no"></iframe>
+            <hr>
+            <div>
+            <iframe class="spotify-player" src="https://open.spotify.com/embed/artist/7nlGYCN92Y2aNRf7ZnM37E?utm_source=generator&theme=0" 
+                width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" 
+                sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="row justify-content-center py-5 my-5">
+        <div class="col-md-8">
+            <h3 class="mb-4 text-center">Featured Video</h3>
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhQFPuLJZA4" title="T-Soul Music Video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="row justify-content-center py-5 my-5">
+        <div class="col-md-8">
+            <h3 class="mb-4 text-center">Upcoming Shows/Concerts</h3>
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+                <iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_2730313?widget_id=52&posted_by=artist_2730313&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=detailed&pwc[show_map]=0%2C1&pwc[size]=fit" 
+                width="100%" height="550" frameborder="0" scrolling="no" style="width:0px;min-width:100%;max-width:100%;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+        </main>
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-4 pb-2" id="site-footer">
+            <div class="container py-4 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <ul class="nav justify-content-center mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="music.html">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline mb-3">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/tsoulsings" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/tsoulofficial" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://open.spotify.com/artist/7nlGYCN92Y2aNRf7ZnM37E" target="_blank">
+                                    <i class="fab fa-spotify" aria-hidden="true"></i>
+                                    <span class="sr-only">Spotify</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/topeakingbala" target="_blank">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <small class="copyright-text">
+                            &copy; 2024 TSoul Music & Consulting. All Rights Reserved.
+                        </small>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+        </footer>
+        <!-- JavaScript for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script> <!-- External JavaScript -->
+    </body>
+    </html>
