@@ -32,16 +32,19 @@
         </div>
     </header>
     <!-- Main Content Section -->
-    <main class="container mt-5 mb-5"> <!-- Added bottom margin -->
-        <h1>Get in Touch</h1>
+    <main class="container mt-5 mb-5 text-center"> 
+        <img src="assets/images/tsoul free img.jpeg" alt="Cover art for the song Flawless by TSoul" 
+        class="img-fluid rounded-circle img-thumbnail w-25">
+        <hr>
+        <h1>Get in Touch</h1>        
         <form action="your-server-side-script" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
             </div>
             <div class="form-group">
                 <label for="inquiryType">Inquiry Type</label>
@@ -57,11 +60,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </main>
-    
+    </main>    
     <!-- Footer Section -->
-    <footer class="bg-dark text-white">
-        <div class="container py-4">
+    <footer class="bg-dark text-white pt-4 pb-2" id="site-footer">
+        <div class="container py-4 ">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
                     <ul class="nav justify-content-center mb-3">
@@ -97,6 +99,12 @@
                                 <span class="sr-only">Spotify</span>
                             </a>
                         </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/topeakingbala" target="_blank">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
                     </ul>
                     <small class="copyright-text">
                         &copy; 2024 TSoul Music & Consulting. All Rights Reserved.
@@ -109,18 +117,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript for Form Validation -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var form = document.getElementById('mailingListSignup');
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    </script>
+    <script src="assets/js/script.js"></script> <!-- External JavaScript -->
 </body>
 </html>
