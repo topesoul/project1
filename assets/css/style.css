@@ -144,30 +144,57 @@ form {
 /* Services section styles */
 #services {
   font-family: 'Bellota Text', cursive;
-  color: slateblue;
-  background-color: rgba(233, 242, 250, 0.859);
-  padding: 50px 0;
+  color: white; 
+  padding: 60px 0; /* Increased padding for a roomier layout */
+  text-align: center; /* Center align for a balanced design */
 }
 
 #services h2, .services-icons h5, #services .testimonial {
-  color: brown;
-  font-style: italic;
-  padding: 20px;
-  background-color:rgba(240, 255, 255, 0.403);
-  border-left: 5px solid #007bff95;
+  color: #333; /* Darker text for emphasis and readability */
+  font-family: 'Bellota Text', cursive; /* Consistent font for titles */
+  font-style: normal; 
+  padding: 25px; /* Increased padding for a prominent look */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for blending effect */
+  border-left: 5px solid #5c7ea9; /* Adjusted border for a touch of elegance */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Refined shadow for subtle depth */
+  display: inline-block; /* For a card-like appearance */
+  margin: 10px; /* Added margin for space between elements */
 }
 
 #services .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 5px;
+  background-color: #007bff; /* Retained vibrant button color */
+  border: none; /* Removed border for a modern flat design */
+  padding: 15px 30px; /* Larger padding for a button that stands out */
+  font-size: 18px; /* Slightly reduced font size for elegance */
+  border-radius: 25px; /* More pronounced rounded corners for a friendly touch */
+  color: #fff; /* Text color for clarity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Consistent shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated transform for interactive feel */
 }
 
-#services .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+#services .btn-primary:hover, #services .btn-primary:focus {
+  background-color: #0056b3; /* Darkened blue for interactive hover state */
+  transform: translateY(-3px); /* Slight lift on hover for a tactile feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35); /* Enhanced shadow for lift effect */
+}
+
+/* Buttons and interactive elements */
+.btn-primary {
+  font-family: 'Yanone Kaffeesatz', sans-serif; /* Consistency with headers */
+  background-color: #007bff; /* Vibrant button color */
+  color: #fff; /* Clarity */
+  padding: 15px 30px; /* Prominent size */
+  font-size: 18px; /* Readability */
+  border-radius: 25px; /* Friendly touch */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Depth */
+  transition: all 0.3s ease; /* Smooth interaction */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0056b3; /* Interactive state */
+  transform: translateY(-2px); /* Tactile feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Lift effect */
 }
 
 /* Footer styles */
@@ -235,6 +262,9 @@ footer .copyright-text {
 /* Media Player Styling */
 .spotify-player {
   border-radius: 12px;
+  width:100%; 
+  height: 352px;
+  border: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
