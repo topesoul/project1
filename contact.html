@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TSoul - Enquiries or Contact Me</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -12,14 +13,16 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap'
+        rel='stylesheet'>
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">TSoul</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,12 +35,12 @@
         </div>
     </header>
     <!-- Main Content Section -->
-    <main class="container mt-5 mb-5 text-center"> 
-        <img src="assets/images/tsoul free img.jpeg" alt="Cover art for the song Flawless by TSoul" 
-        class="img-fluid rounded-circle img-thumbnail w-25">
+    <main class="container mt-5 mb-5 text-center">
+        <img src="assets/images/tsoul free img.jpeg" alt="Cover art for the song Flawless by TSoul"
+            class="img-fluid rounded-circle img-thumbnail w-25">
         <hr>
-        <h1>Get in Touch</h1>        
-        <form action="your-server-side-script" method="POST">
+        <h1>Get in Touch</h1>
+        <form action="submit-form.php" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
@@ -60,7 +63,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </main>    
+    </main>
     <!-- Footer Section -->
     <footer class="bg-dark text-white pt-4 pb-2" id="site-footer">
         <div class="container py-4 ">
@@ -119,4 +122,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script> <!-- External JavaScript -->
 </body>
+
 </html>
