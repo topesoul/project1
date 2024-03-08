@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Embark on a sonic adventure with TSoul, a unique blend of R&B, Soul, and analytics.">
-    <meta name="keywords" content="TSoul, Music, Data Analytics, R&B, Soul, Artist">
     <title>TSoul - Rhythms That Resonate</title>
     <!-- Bootstrap CSS for responsive and modern UI components -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,15 +13,16 @@
     <!-- Custom Styles for personalized styling -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts for diverse and accessible typography -->
-    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap' rel='stylesheet'>
-    <meta name="description" content="Dive into TSoul's World of Music where every note resonates with the heart's deepest narratives. Explore the power of music with TSoul.">
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap'
+        rel='stylesheet'>
 </head>
+
 <body>
     <!-- Header Section for site navigation -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">TSoul</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,22 +38,22 @@
     <main class="container mt-5">
         <section class="text-center">
             <h1>Welcome to TSoul's World</h1>
-            <img src="assets/images/tsoulheroimg.jpg" alt="TSoul Profile Image" class="profile-image">            
-            <p class="mt-4">Embark on a sonic adventure with TSoul, where every note is an echo of the heart's deepest narratives. 
-            Here, melodies are not just heard; they are felt. Dive into an experience that transcends the ordinary and celebrates 
-            the extraordinary power of music to move, to soothe, and to exhilarate.</p>
+            <img src="assets/images/tsoulheroimg.jpg" alt="TSoul Profile Image" class="profile-image">
+            <p class="mt-4">Embark on a sonic adventure with TSoul, where every note is an echo of the heart's deepest
+                narratives.
+                Here, melodies are not just heard; they are felt. Dive into an experience that transcends the ordinary
+                and celebrates
+                the extraordinary power of music to move, to soothe, and to exhilarate.</p>
             <div class="mailing-list-signup mt-4">
                 <h2>Stay Updated</h2>
                 <form id="mailingListSignup" novalidate>
                     <div class="form-group">
-                        <input 
-                            type="email" 
-                            class="form-control" 
-                            id="emailAddress" 
-                            name="emailAddress" 
-                            placeholder="Enter your email address"
-                            required 
-                            aria-describedby="emailHelp">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="emailAddress" name="emailAddress"
+                            placeholder="Enter your email address" required aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-muted">
+                            Please enter your email address.
+                        </div>
                         <div class="invalid-feedback">
                             Please provide a valid email address.
                         </div>
@@ -65,25 +64,28 @@
         </section>
         <section class="philosophy mt-5 text-center">
             <h3>My Philosophy</h3>
-            <p>At the heart of my work lies a commitment to excellence, whether it's harmonizing data to unveil insights or 
-               composing soothing melodies that resonate from within. 
-               Join me on this voyage where every chord is a discovery and every insight, a step towards harmony.
-            </p>  
+            <p>At the heart of my work lies a commitment to excellence, whether it's harmonizing data to unveil insights
+                or
+                composing soothing melodies that resonate from within.
+                Join me on this voyage where every chord is a discovery and every insight, a step towards harmony.
+            </p>
         </section>
         <!-- Spotify Embed Section -->
         <section class="row justify-content-center py-5 my-5">
             <div class="col-md-8 text-center">
                 <h3 class="mb-4">Soulful Vibes!</h3>
-                <p><small>Soulful Sounds from the Soulifter...</small></p> 
-                <div>
-                    <iframe class="spotify-player" src="https://open.spotify.com/embed/artist/7nlGYCN92Y2aNRf7ZnM37E?utm_source=generator&theme=0" 
-                    width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="TSoul Spotify Player">
-                </iframe>
+                <p><small>Soulful Sounds from the Soulifter...</small></p>
+                <div class="spotify-embed">
+                    <iframe class="spotify-player"
+                        src="https://open.spotify.com/embed/artist/7nlGYCN92Y2aNRf7ZnM37E?utm_source=generator"
+                        width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"
+                        loading="lazy" title="TSoul Spotify Player"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-presentation">
+                    </iframe>
                 </div>
             </div>
         </section>
-    </main>   
+    </main>
     <!-- Footer Section for site-wide footer content -->
     <footer class="bg-dark text-white pt-4 pb-2" id="site-footer">
         <div class="container py-4 ">
@@ -142,4 +144,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script> <!-- External JavaScript -->
 </body>
+
 </html>
