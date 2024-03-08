@@ -2,7 +2,7 @@
 
 /* Base styles */
 body {
-  font-family: 'Sansita Swashed', cursive;
+  font-family: 'Sansita Swashed', cursive, Arial, sans-serif;
   font-size: 1.3rem;
   color: #ffffff;
   font-weight: 400;
@@ -22,13 +22,19 @@ header .navbar {
   background: rgba(52, 58, 64, 0.8);
 }
 
-.navbar-brand, .navbar-nav .nav-link {
+.navbar-brand,
+.navbar-nav .nav-link {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Grenze Gotisch', serif;
   font-weight: 700;
   color: chocolate;
@@ -62,62 +68,74 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Smooth Transitions and Hover Effects */
-a, .btn, .navbar-brand, .nav-link {
+a,
+.btn,
+.navbar-brand,
+.nav-link {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.nav-link:hover, .navbar-brand:hover {
+.nav-link:hover,
+.navbar-brand:hover {
   color: #1eceff;
   text-decoration: underline;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
   opacity: 0.9;
 }
 
 /* Box Shadows for Depth */
 .shadow-sm {
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
 
 .shadow {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 /* Custom shadow for interactive elements */
-.btn, .card {
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+.btn,
+.card {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
-.btn:hover, .card:hover {
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+.btn:hover,
+.card:hover {
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
 /* Consistency in Interactive Elements */
-.form-control, .btn, .navbar-toggler {
+.form-control,
+.btn,
+.navbar-toggler {
   border-radius: 0.25rem;
 }
 
 /* Style adjustments for forms */
 .form-control:focus {
   border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
 
 form {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: rgba(156,205,207,0.35);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(156, 205, 207, 0.35);
 }
 
 /* Utility Classes for Margin and Padding */
-.mt-2, .my-2, .px-3, .py-4 {
+.mt-2,
+.my-2,
+.px-3,
+.py-4 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-left: 1rem;
@@ -137,64 +155,109 @@ form {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Services section styles */
 #services {
   font-family: 'Bellota Text', cursive;
-  color: white; 
-  padding: 60px 0; /* Increased padding for a roomier layout */
-  text-align: center; /* Center align for a balanced design */
+  color: white;
+  /* Maintained text color for consistency */
+  padding: 60px 0;
+  /* Increased padding for a roomier layout */
+  text-align: center;
+  /* Center align for a balanced design */
 }
 
-#services h2, .services-icons h5, #services .testimonial {
-  color: #333; /* Darker text for emphasis and readability */
-  font-family: 'Bellota Text', cursive; /* Consistent font for titles */
-  font-style: normal; 
-  padding: 25px; /* Increased padding for a prominent look */
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for blending effect */
-  border-left: 5px solid #5c7ea9; /* Adjusted border for a touch of elegance */
-  border-radius: 10px; /* Rounded corners for a softer look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Refined shadow for subtle depth */
-  display: inline-block; /* For a card-like appearance */
-  margin: 10px; /* Added margin for space between elements */
+#services h2,
+.services-icons h5,
+#services .testimonial {
+  color: #333;
+  /* Darker text for emphasis and readability */
+  font-family: 'Bellota Text', cursive;
+  /* Consistent font for titles */
+  font-style: normal;
+  padding: 25px;
+  /* Increased padding for a prominent look */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent white for blending effect */
+  border-left: 5px solid #5c7ea9;
+  /* Adjusted border for a touch of elegance */
+  border-radius: 10px;
+  /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* Refined shadow for subtle depth */
+  display: inline-block;
+  /* For a card-like appearance */
+  margin: 10px;
+  /* Added margin for space between elements */
 }
 
 #services .btn-primary {
-  background-color: #007bff; /* Retained vibrant button color */
-  border: none; /* Removed border for a modern flat design */
-  padding: 15px 30px; /* Larger padding for a button that stands out */
-  font-size: 18px; /* Slightly reduced font size for elegance */
-  border-radius: 25px; /* More pronounced rounded corners for a friendly touch */
-  color: #fff; /* Text color for clarity */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Consistent shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animated transform for interactive feel */
+  background-color: #007bff;
+  /* Retained vibrant button color */
+  border: none;
+  /* Removed border for a modern flat design */
+  padding: 15px 30px;
+  /* Larger padding for a button that stands out */
+  font-size: 18px;
+  /* Slightly reduced font size for elegance */
+  border-radius: 25px;
+  /* More pronounced rounded corners for a friendly touch */
+  color: #fff;
+  /* Text color for clarity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  /* Consistent shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animated transform for interactive feel */
 }
 
-#services .btn-primary:hover, #services .btn-primary:focus {
-  background-color: #0056b3; /* Darkened blue for interactive hover state */
-  transform: translateY(-3px); /* Slight lift on hover for a tactile feel */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35); /* Enhanced shadow for lift effect */
+#services .btn-primary:hover,
+#services .btn-primary:focus {
+  background-color: #0056b3;
+  /* Darkened blue for interactive hover state */
+  outline: 2px solid #fff;
+  transform: translateY(-3px);
+  /* Slight lift on hover for a tactile feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  /* Enhanced shadow for lift effect */
 }
 
 /* Buttons and interactive elements */
 .btn-primary {
-  font-family: 'Yanone Kaffeesatz', sans-serif; /* Consistency with headers */
-  background-color: #007bff; /* Vibrant button color */
-  color: #fff; /* Clarity */
-  padding: 15px 30px; /* Prominent size */
-  font-size: 18px; /* Readability */
-  border-radius: 25px; /* Friendly touch */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Depth */
-  transition: all 0.3s ease; /* Smooth interaction */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  /* Consistency with headers */
+  background-color: #007bff;
+  /* Vibrant button color */
+  color: #fff;
+  /* Clarity */
+  padding: 15px 30px;
+  /* Prominent size */
+  font-size: 18px;
+  /* Readability */
+  border-radius: 25px;
+  /* Friendly touch */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Depth */
+  transition: all 0.3s ease;
+  /* Smooth interaction */
 }
 
-.btn-primary:hover, .btn-primary:focus {
-  background-color: #0056b3; /* Interactive state */
-  transform: translateY(-2px); /* Tactile feel */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Lift effect */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3;
+  /* Interactive state */
+  outline: 2px solid #fff;
+  transform: translateY(-2px);
+  /* Tactile feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Lift effect */
 }
 
 /* Footer styles */
@@ -202,7 +265,8 @@ footer {
   background-color: #343a40;
 }
 
-footer a.text-white, footer ul.list-inline li a {
+footer a.text-white,
+footer ul.list-inline li a {
   color: #ffffff;
   transition: color 0.3s;
 }
@@ -216,11 +280,13 @@ footer a.text-white, footer ul.list-inline li a {
   border: 2px solid white;
 }
 
-footer a.text-white:hover, footer ul.list-inline li a:hover {
-    color: #1eceff;
+footer a.text-white:hover,
+footer ul.list-inline li a:hover {
+  color: #1eceff;
 }
 
-footer ul.nav, footer ul.list-inline {
+footer ul.nav,
+footer ul.list-inline {
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -253,29 +319,76 @@ footer .copyright-text {
   opacity: 1;
 }
 
-#music-content .about-artist, #music-content .spotify-embed, #music-content .featured-video {
+#music-content .about-artist,
+#music-content .spotify-embed,
+#music-content .featured-video {
   padding: 50px 0;
   margin: 50px 0;
   color: white;
 }
 
 /* Media Player Styling */
-.spotify-player {
+/* Container for both players */
+.player-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* This adds space between the players */
+}
+
+/* Styling for Spotify Player container */
+.spotify-embed {
+  flex: 1;
+  min-width: 300px;
+  /* Minimum width before wrapping */
+}
+
+/* Styling for Reverbnation Player container */
+.reverbnation-embed {
+  flex: 1;
+  min-width: 300px;
+  /* Minimum width before wrapping */
+}
+
+/* Styling for both iframes */
+.spotify-embed iframe,
+.reverbnation-embed iframe {
+  width: 100%;
   border-radius: 12px;
-  width:100%; 
-  height: 352px;
   border: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Adjust the height of the iframes accordingly */
+.spotify-player {
+  height: 380px;
+  /* Adjust as needed */
+}
+
 .reverbnation-widget {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+  height: 265px;
+  /* Adjust as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .player-container {
+    flex-direction: column;
+  }
+
+  .spotify-embed,
+  .reverbnation-embed {
+    min-width: 0;
+    /* Allows iframes to scale down on smaller screens */
+  }
 }
 
 /* Additional styles and adjustments */
-.img-fluid, .rounded, .carousel-item, .service-text {
+.img-fluid,
+.rounded,
+.carousel-item,
+.service-text {
   max-width: 100%;
   border-radius: 0.25rem;
 }
@@ -301,25 +414,35 @@ footer .copyright-text {
   }
 }
 
+@media (max-width: 768px) {
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
 /* Ensures the image is large and centered in its column */
 img.profile-image {
-  max-width: 90%; 
-  height:auto;
+  max-width: 90%;
+  height: auto;
   margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
+
   /* Stack image and text on smaller screens */
-  .service-text, img.profile-image {
+  .service-text,
+  img.profile-image {
     max-width: 100%;
     margin-bottom: 2rem;
   }
 }
 
-  .service-text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
+.service-text {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
 
 @media (min-width: 1025px) {
   .profile-image {
@@ -329,7 +452,7 @@ img.profile-image {
   img.profile-image {
     max-width: 100%;
     padding: 20px;
-    height:auto;
+    height: auto;
     margin-bottom: 2rem;
   }
 
