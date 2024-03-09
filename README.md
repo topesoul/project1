@@ -49,6 +49,14 @@ The website's structure is designed to guide users effortlessly from one section
 
 Employing a minimalist design philosophy, the skeleton of the site is clean and user-focused. Attention is centered on content and interactions, with a layout that is both aesthetically pleasing and highly functional.
 
+Below is a link to the initial draft of the wireframes I created for the project and 
+an initial conceptual idea of how everything would be structured and how everything would respond on different devices.
+
+[TSoul-Project Wireframes](documentation/tsoulprojectwireframe.pdf)
+
+I also typed up all my pages beforehand to help me to proofread the content and fix the grammatical error. 
+It also allowed me to plan my text, structure my paragraphs, and condense text under subheadings.
+
 ---
 
 ### Surface
