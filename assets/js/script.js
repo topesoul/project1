@@ -1,35 +1,38 @@
-if (document.getElementById("parallaxElementId")) {
-    var scrolled = window.scrollY || window.pageYOffset;
-    var parallaxElement = document.getElementById("parallaxElementId");
+document.addEventListener("DOMContentLoaded", function () {
   
-    // Define a function to update the parallax effect
-    function updateParallax() {
-      var coords = scrolled * 0.5 + "px";
-      parallaxElement.style.transform = "translateY(" + coords + ")";
-    }
-  
-    // Define a function to handle the scroll event
-    function handleScroll() {
-      // Update the scrolled variable
-      scrolled = window.scrollY || window.pageYOffset;
-      // Request the browser to run the updateParallax function
-      requestAnimationFrame(updateParallax);
-    }
-  
-    // Add the scroll event listener
+  // Parallax functionality
+  var parallaxElement = document.getElementById("parallaxElementId");
+  var scrolled;
+  // Function to update parallax effect based on scroll position
+  function updateParallax() {
+    var coords = scrolled * 0.5 + "px";
+    parallaxElement.style.transform = "translateY(" + coords + ")";
+  }
+
+  // Function to handle the scroll event and update parallax
+  function handleScroll() {
+    scrolled = window.scrollY || window.pageYOffset;
+    requestAnimationFrame(updateParallax);
+  }
+
+  // Add scroll event listener if parallax element exists
+  if (parallaxElement) {
     window.addEventListener("scroll", handleScroll);
   }
+
+  // Form validation functionality
+  var form = document.getElementById('mailingListSignup');
   
-  document.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById('mailingListSignup');
-    if (form) {
-      form.addEventListener('submit', function (event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    }
-  });
-  
+  // Event listener for form submission
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      // Check form validity and prevent default if invalid
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      // Add 'was-validated' class on form submission
+      form.classList.add('was-validated');
+    }, false);
+  }
+});
