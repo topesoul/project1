@@ -175,7 +175,7 @@ The development process of the TSoul website prioritized semantic HTML structure
     - Used to create the wireframes for the project.
 
 - [AutoPrefixer](https://autoprefixer.github.io/)
-    - Used to parse my CSS and ass vendor prefixes.
+    - Used to parse my CSS vendor prefixes.
 
 - [Grammarly](https://www.grammarly.com/)
     - Used to fix the thousands of grammar errors across the project.
