@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Parallax functionality
   var parallaxElement = document.getElementById("parallaxElementId");
   var scrolled;
+
   // Function to update parallax effect based on scroll position
   function updateParallax() {
     var coords = scrolled * 0.5 + "px";
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to handle the scroll event and update parallax
   function handleScroll() {
-    scrolled = window.scrollY || window.pageYOffset;
+    scrolled = window.scrollY; // Updated to use scrollY instead of pageYOffset
     requestAnimationFrame(updateParallax);
   }
 
