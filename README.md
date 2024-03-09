@@ -61,7 +61,7 @@ It also allowed me to plan my text, structure my paragraphs, and condense text u
 
 ### Surface
 
-The surface design utilizes a color scheme and typography that reflect TSoul's personal brand. I utilised the fonts such as Grenze Gotisch and Sansita Swashed, and included fallback fonts to ensure wider support across various scenarios. I have also maintained a consistent theme across all pages to ensure that visual elements can engage users eand promote readability and ease of navigation especially when considering the transparent and static background cover image overlay used.
+The surface design utilizes a color scheme and typography that reflect TSoul's personal brand. I utilised fonts such as Grenze Gotisch and Sansita Swashed, and included fallback fonts to ensure wider support across various scenarios. I have also maintained a consistent theme across all pages to ensure that visual elements can engage users and promote readability and ease of navigation especially when considering the transparent and static background cover image overlay used.
 
 ---
 
