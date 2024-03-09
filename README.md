@@ -218,18 +218,52 @@ there were no syntax errors in the project.
 
 ---
 
-**Known Bugs and Fixs**
-- Potentially Bad Value for Attribute Sandbox on Element iframe (reverbnation widget)
-    - Removed allow-same-origin.
-- Page titles were not updated in the head element of the HTML files.
-    - Updated the head element for each file, so that the page title in tabs reflects the current page.
-- Social Links in footer were not updated.
-    - Removed the placeholdertext and replaced with correct link to social media link and checked it opens in a new tab.
-- Improved general accessibility features and ARIA label integration.
-- HTML content refactoring for readability and maintainability.
-- CSS updates for responsiveness and visual appeal.
-- Implementation of client-side form validation.
-- Final layout refinements for an optimized website structure.
+### Known Bugs and Fixes
+
+**Issue with iframe src attribute: Illegal character**
+- **Description:** URL in the `src` attribute of the `iframe` contains illegal characters (`[`, `]`). Encoding recommended but may disrupt functionality for services like Reverbnation.
+- **Status:** Unresolved. Modification may affect feature functionality.
+
+**Incorrect iframe width value**
+- **Fix:** Removed `width="100%"` attribute. Adjusted width using CSS.
+
+**Obsolete frameborder attribute on iframe**
+- **Fix:** Replaced `frameborder` attribute with CSS styling (`border: none;`).
+
+**Error: Stray start tag footer**
+- **Description:** Document flagged for a stray `<footer>` tag, indicating potential structural issues.
+- **Status:** Unresolved. No structural errors found related to `<footer>`; may be a false positive.
+
+**Potentially Bad Value for Attribute Sandbox on Element iframe (Reverbnation widget)**
+- **Fix:** Removed `allow-same-origin`.
+
+**Page titles not updated in head element**
+- **Fix:** Updated the head element for each file to reflect the current page title in tabs.
+
+**Social Links in footer not updated**
+- **Fix:** Updated placeholder text with correct social media links, ensuring they open in a new tab.
+
+**Fix HTML Validation Errors and Stray Div Tag in Spotify Embed Section**
+- **Fixes:** 
+    - Resolved HTML validation errors by removing obsolete attributes like 'frameborder' and 'allowtransparency'.
+    - Corrected the 'width' attribute issue in the iframe with CSS for responsiveness.
+    - Re-evaluated 'sandbox' attribute values for security.
+    - Removed a stray closing div tag (`</div>`) in the Spotify Embed Section for proper structure.
+
+**Improved general accessibility features and ARIA label integration**
+- **Action:** Enhanced accessibility by integrating ARIA labels where necessary and improving overall website accessibility.
+
+**HTML content refactoring for readability and maintainability**
+- **Action:** Refactored HTML content to improve readability and maintainability, ensuring better code management and updates.
+
+**CSS updates for responsiveness and visual appeal**
+- **Action:** Updated CSS to enhance responsiveness and visual appeal, providing a more engaging user experience across different devices.
+
+**Implementation of client-side form validation**
+- **Action:** Implemented client-side validation to improve user interaction and prevent submission of invalid forms, enhancing overall user experience.
+
+**Final layout refinements for an optimized website structure**
+- **Action:** Made final adjustments to the website layout to ensure an optimized structure for navigation and user engagement.
 
 ---
 
