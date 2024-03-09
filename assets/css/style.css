@@ -469,3 +469,12 @@ main {
 #site-footer {
   width: 100%;
 }
+
+/*widget iframe for maps and upcoming shows*/
+.widget_iframe {
+  width: 100%; /* Ensure the iframe is full width */
+  min-width: 100%; /* Minimum width to ensure responsiveness */
+  max-width: 100%; /* Maximum width to ensure it doesn't overflow its container */
+  border: none; /* Ensures no border is visible */
+  height: 550px; 
+}
