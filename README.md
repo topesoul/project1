@@ -222,51 +222,40 @@ there were no syntax errors in the project.
 
 **Issue with iframe src attribute: Illegal character**
 - **Description:** URL in the `src` attribute of the `iframe` contains illegal characters (`[`, `]`). Encoding recommended but may disrupt functionality for services like Reverbnation.
-- **Status:** Unresolved. Modification may affect feature functionality.
+- **Status:** Unresolved due to potential impact on functionality.
 
 **Incorrect iframe width value**
-- **Fix:** Removed `width="100%"` attribute. Adjusted width using CSS.
+- **Fix:** Removed `width="100%"` attribute and adjusted width using CSS for proper responsiveness.
 
-**Obsolete frameborder attribute on iframe**
-- **Fix:** Replaced `frameborder` attribute with CSS styling (`border: none;`).
+**Obsolete attributes on iframe**
+- **Fix:** Replaced `frameborder` and `allowtransparency` attributes with CSS styling (`border: none;` and appropriate transparency settings) for modern compliance.
 
-**Error: Stray start tag footer**
-- **Description:** Document flagged for a stray `<footer>` tag, indicating potential structural issues.
-- **Status:** Unresolved. No structural errors found related to `<footer>`; may be a false positive.
+**Error: Stray start tag footer and stray div tag**
+- **Status:** Unresolved. Comprehensive checks confirmed no structural errors related to `<footer>` or stray `</div>` tags; may be false positives.
 
 **Potentially Bad Value for Attribute Sandbox on Element iframe (Reverbnation widget)**
-- **Fix:** Removed `allow-same-origin`.
+- **Fix:** Removed `allow-same-origin` to enhance security.
 
 **Page titles not updated in head element**
-- **Fix:** Updated the head element for each file to reflect the current page title in tabs.
+- **Fix:** Updated the head element for each file to accurately reflect the current page title in browser tabs.
 
 **Social Links in footer not updated**
-- **Fix:** Updated placeholder text with correct social media links, ensuring they open in a new tab.
+- **Fix:** Corrected placeholder text with actual social media links, ensuring they open in new tabs for user convenience.
 
-**Fix HTML Validation Errors and Stray Div Tag in Spotify Embed Section**
-- **Fixes:** 
-    - Resolved HTML validation errors by removing obsolete attributes like 'frameborder' and 'allowtransparency'.
-    - Corrected the 'width' attribute issue in the iframe with CSS for responsiveness.
-    - Re-evaluated 'sandbox' attribute values for security.
-    - Removed a stray closing div tag (`</div>`) in the Spotify Embed Section for proper structure.
+**HTML content refactoring for readability, maintainability, and accessibility**
+- **Action:** Performed HTML content refactoring to improve readability and maintainability. Enhanced accessibility by integrating ARIA labels and improving overall website accessibility.
 
-**Improved general accessibility features and ARIA label integration**
-- **Action:** Enhanced accessibility by integrating ARIA labels where necessary and improving overall website accessibility.
-
-**HTML content refactoring for readability and maintainability**
-- **Action:** Refactored HTML content to improve readability and maintainability, ensuring better code management and updates.
-
-**CSS updates for responsiveness and visual appeal**
-- **Action:** Updated CSS to enhance responsiveness and visual appeal, providing a more engaging user experience across different devices.
+**CSS updates for improved responsiveness and visual appeal**
+- **Action:** Made CSS updates to enhance the responsiveness and visual appeal of the website, ensuring a seamless experience across various devices.
 
 **Implementation of client-side form validation**
-- **Action:** Implemented client-side validation to improve user interaction and prevent submission of invalid forms, enhancing overall user experience.
+- **Action:** Implemented client-side validation to enhance the user experience by preventing the submission of invalid forms.
 
-**Final layout refinements for an optimized website structure**
-- **Action:** Made final adjustments to the website layout to ensure an optimized structure for navigation and user engagement.
+**Final layout refinements for optimized website structure**
+- **Action:** Conducted final layout refinements to ensure an optimized website structure for better navigation and user engagement.
 
-**Custom Thank You Page for Form Submission**
-- **Fix:** To address form submission issues, a custom thank you page was created to provide confirmation to the user upon the submission of the mail signup form and the contact/inquiries form. This ensures users receive immediate feedback and confirmation of their actions.
+**Custom thank you page for form submission confirmation**
+- **Action:** Created a custom thank you HTML page to provide users with confirmation upon submission of the mail signup form and the contact/inquiries form, addressing the issue of form submission bouncing back when using the post method.
 
 ---
 
