@@ -329,59 +329,42 @@ footer .copyright-text {
 }
 
 /* Media Player Styling */
-/* Container for both players */
-.player-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  /* This adds space between the players */
-}
-
 /* Styling for Spotify Player container */
 .spotify-embed {
-  flex: 1;
-  min-width: 300px;
-  /* Minimum width before wrapping */
+  min-width: 300px; /* Ensures a minimum width for the Spotify player */
+  margin-bottom: 20px; /* Adds some space below the player */
 }
 
-/* Styling for Reverbnation Player container */
-.reverbnation-embed {
-  flex: 1;
-  min-width: 300px;
-  /* Minimum width before wrapping */
+/* Since .embed-container is directly applied to the Reverbnation widget's container */
+.embed-container {
+  min-width: 300px; /* Ensures a minimum width for the Reverbnation player */
+  margin-bottom: 20px; /* Adds some space below the player */
 }
 
-/* Styling for both iframes */
+/* Styling for iframes within both player containers */
 .spotify-embed iframe,
-.reverbnation-embed iframe {
+.embed-container iframe {
   width: 100%;
   border-radius: 12px;
   border: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjust the height of the iframes accordingly */
-.spotify-player {
+/* Specific height adjustments for each player */
+.spotify-embed iframe {
   height: 380px;
-  /* Adjust as needed */
 }
 
-.reverbnation-widget {
+.embed-container iframe {
   height: 265px;
-  /* Adjust as needed */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .player-container {
-    flex-direction: column;
-  }
-
   .spotify-embed,
-  .reverbnation-embed {
-    min-width: 0;
-    /* Allows iframes to scale down on smaller screens */
+  .embed-container {
+    min-width: 100%; /* Allows each player to expand to the full width of the container on smaller screens */
+    max-width: 100%; /* Prevents any overflow or excess width beyond the container */
   }
 }
 
