@@ -1,6 +1,6 @@
 # TSoul - User Centric Milestone Project
 
-![TSoul-Project Responsive View on all Devices](assets/images/tsoulwebresponsiveness.png)
+![TSoul-Project Responsive View on all Devices](documentation/tsoulwebresponsiveness.png)
 
 ## Introduction
 
@@ -163,7 +163,7 @@ The development process of the TSoul website prioritized semantic HTML structure
 - [Gitpod](https://www.gitpod.io/)
     - Used as the development enviroment.
 
-- [GoodNotes App on Samsung S9 Ultra Tablet]
+- GoodNotes App on Samsung S9 Ultra Tablet
     - Used to create the wireframes for the project.
 
 - [AutoPrefixer](https://autoprefixer.github.io/)
@@ -178,22 +178,20 @@ The development process of the TSoul website prioritized semantic HTML structure
 
 Comprehensive testing was conducted to ensure each feature performs as expected across different browsers and devices. Here is a summary of our testing procedure:
 
-| Feature              | Expected Outcome                                  | Testing Performed      | Result | Pass/Fail |
-|----------------------|---------------------------------------------------|------------------------|--------|-----------|
-| Responsive Design    | Display correctly on mobile and desktop           | Resize browser         | Pass   | Pass      |
-| Music Streaming      | Smooth playback through Spotify and YouTube       | Function test on embed | Pass   | Pass      |
-| Social Media Links   | Direct to respective social platforms             | Click each link        | Pass   | Pass      |
-| Professional Services| Clearly present TSoul's consulting capabilities   | Content review         | Pass   | Pass      |
-| Contact Form         | Submit inquiries and bookings                     | Form submission test   | Pass   | Pass      |
-| Cross-Browser Testing| Functionality on Chrome, Safari, and Edge         | Open site on browsers  | Pass   | Pass      |
-| Media Player | Flawless audio playback | Audio playback tests on multiple devices | Pass | Pass |
-| Service Details | Informative and clear presentation | Content review and user feedback | Pass | Pass |
-| Contact Form | Reliable and user-friendly form submission | Submission tests and confirmation checks | Pass | Pass |
+| Feature              | Expected Outcome                                  | Testing Performed      | Pass/Fail |
+|----------------------|---------------------------------------------------|------------------------|-----------|
+| Responsive Design    | Display correctly on mobile and desktop           | Resize browser         | Pass      |
+| Music Streaming      | Smooth playback through Spotify and YouTube       | Function test on embed | Pass      |
+| Social Media Links   | Direct to respective social platforms             | Click each link        | Pass      |
+| Professional Services| Clearly present TSoul's consulting capabilities   | Content review         | Pass      |
+| Contact Form         | Submit inquiries and bookings                     | Form submission test   | Pass      |
+| Cross-Browser Testing| Functionality on Chrome, Safari, and Edge         | Open site on browsers  | Pass      |
+| Map widget | Clear display of upcoming shows and functional map | Loads and displays on multiple devices | Pass |
+| Service Details | Informative and clear presentation | Content review and user feedback | Pass |
+| Contact Form | Reliable and user-friendly form submission and feedback | Submission tests and confirmation checks | Pass |
 
 **Further Testing**
 
-- The project was tested on the following browsers with success, Google Chrome, Microsoft Edge, Mozilla Firefox, and Opera.
-- Project was manually tested on an iPhone 11 and a Samsung A70 with success.
 - Google Chrome Developer tools were used throughout the project to help me to test the responsiveness across devices.
 - Google Chrome Developer tools used to emulate devices,
     - Apple iPad
