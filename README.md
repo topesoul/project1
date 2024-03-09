@@ -265,6 +265,9 @@ there were no syntax errors in the project.
 **Final layout refinements for an optimized website structure**
 - **Action:** Made final adjustments to the website layout to ensure an optimized structure for navigation and user engagement.
 
+**Custom Thank You Page for Form Submission**
+- **Fix:** To address form submission issues, a custom thank you page was created to provide confirmation to the user upon the submission of the mail signup form and the contact/inquiries form. This ensures users receive immediate feedback and confirmation of their actions.
+
 ---
 
 ## **Deployment** ##
