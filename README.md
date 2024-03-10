@@ -10,10 +10,26 @@ The live version of the project can be experienced here: [TSoul Website](https:/
 
 ## Project Structure
 
-- `index.html` - The landing page of the website that welcomes visitors.
-- `music.html` - A page dedicated to TSoul's music portfolio.
-- `services.html` - Details the professional services offered by Temitope in workforce analytics.
-- `contact.html` - A form to facilitate communication with TSoul.
+- `index.html`: The landing page that welcomes visitors.
+- `music.html`: Dedicated to TSoul's music portfolio.
+- `services.html`: Details Temitope's professional services in workforce analytics.
+- `contact.html`: A form to facilitate communication with TSoul.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Project-Structure](#iproject-structure)
+- [User Experience (UX)](#user-experience-design-ux)
+  - [Strategy](#strategy)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+  - [Surface](#surface)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 ---
 
@@ -22,15 +38,34 @@ The live version of the project can be experienced here: [TSoul Website](https:/
 The website's primary aim is to introduce TSoul as an artist and analyst, creating a platform for a wide variety of individuals, including music enthusiasts and corporate or data-centric professionals. It aligns with my personal goal to merge these distinct yet harmonious paths. 
 Informed by "The Elements of User-Experience" by Jesse James Garrett, the TSoul project prioritizes an engaging and intuitive user experience, structured into five distinct planes:
 
+- The Strategy Plane
+- The Scope Plane
+- The Structure Plane
+- The Skeleton Plane
+- The Surface Plane
+
 ---
 
 ### Strategy
 
+The site aims to showcase the talents and services of TSoul, a musician and data analyst, and to connect with his audience and potential clients.
 My strategy here is based on a meticulously planned approach underscored by the creation of a platform that showcases TSoul's talents and services while optimizing the user journey with thoughtful interaction design.
+
+As a developer, I am interested in understanding the users of this site and forms the main focus of my approach on this project. I have identified the following goals for visitors:
+
+#### First-Time Visitor Goals
+1. Understand TSoul's dual career as an artist and data analyst.
+2. Navigate the website intuitively to find music or professional services.
+
+#### Returning Visitor Goals
+1. Explore new music releases or services updates.
+2. Easily engage with TSoul for collaboration or service inquiries.
 
 ---
 
 ### Scope
+
+The product includes features such as responsive navigation bar, music streaming services, a professional portfolio, a contact form, and social media links. The content consists of text, images, and videos that highlight TSoul’s work and personality.
 
 Key features of the project include:
 - A rich discography section with integrated media players for TSoul's music.
@@ -41,13 +76,18 @@ Key features of the project include:
 
 ### Structure
 
-The website's structure is designed to guide users effortlessly from one section to the next, providing a comprehensive overview of TSoul's offerings. Clear, logical navigation ensures that users can find the information they are looking for with ease.
+I thought extensively about what text content to use while still keeping a minimalistic design, for this I employed some inspiration from my blogs and media publications to synthesize an artistic narrative, feel and overall experience.
+
+The website's structure is designed to guide users effortlessly from one section to the next, providing a comprehensive overview of TSoul's offerings. Clear, logical navigation ensures that users can find the information they are looking for with ease. TSoul project is organized into sections that correspond to the main features, such as home, music, services, and contact. The user can choose to navigate between the sections using the navigation bar or the footer. The user can also interact with the site by streaming music, watching videos, filling out the contact form, or following the social media links.
+
 
 ---
 
 ### Skeleton
 
 Employing a minimalist design philosophy, the skeleton of the site is clean and user-focused. Attention is centered on content and interactions, with a layout that is both aesthetically pleasing and highly functional.
+
+The site uses a grid-based layout that adapts to different screen sizes and devices. The navigation bar is fixed at the top and collapses into a hamburger menu on smaller screens. The footer contains the social media links and the logo. The product uses visual cues such as icons, buttons, and headings to guide the user.
 
 Below is a link to the initial draft of the wireframes I created for the project and 
 an initial conceptual idea of how everything would be structured and how everything would respond on different devices.
@@ -61,21 +101,11 @@ It also allowed me to plan my text, structure my paragraphs, and condense text u
 
 ### Surface
 
-The surface design utilizes a color scheme and typography that reflect TSoul's personal brand. I utilised fonts such as Grenze Gotisch and Sansita Swashed, and included fallback fonts to ensure wider support across various scenarios. I have also maintained a consistent theme across all pages to ensure that visual elements can engage users and promote readability and ease of navigation especially when considering the transparent and static background cover image overlay used.
+TSoul project uses a dark and cool colour scheme that contrasts with the bright and warm colours of the hero images and the chocolate colour of the headings. The site uses three fonts: Sansita Swashed for the body text, Grenze Gotisch for the headings, and Bellota Text for the services section. The site also uses animations, transitions, and hover effects to create a dynamic and engaging user experience. 
+
+The surface design utilizes general themes and typography that reflect TSoul's personal brand. I have also utilised fallback fonts to ensure wider support across various scenarios. I have also maintained a consistent theme across all pages to ensure that visual elements can engage users and promote readability and ease of navigation especially when considering the transparent and static background cover image overlay used.
 
 ---
-
-### User-Centric Approach
-
-Understanding users is the main focus of my approach on this project. I have identified the following goals for visitors:
-
-#### First-Time Visitor Goals
-1. Understand TSoul's dual career as an artist and data analyst.
-2. Navigate the website intuitively to find music or professional services.
-
-#### Returning Visitor Goals
-1. Explore new music releases or services updates.
-2. Easily engage with TSoul for collaboration or service inquiries.
 
 ## Features
 
