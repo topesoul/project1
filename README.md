@@ -18,8 +18,8 @@ The live version of the project can be experienced here: [TSoul Website](https:/
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Project-Structure](#iproject-structure)
-- [User Experience (UX)](#user-experience-design-ux)
+- [Project Structure](#project-structure)
+- [User Experience (UX)](#user-experience-ux)
   - [Strategy](#strategy)
   - [Scope](#scope)
   - [Structure](#structure)
