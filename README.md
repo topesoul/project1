@@ -126,7 +126,7 @@ Enhancements to the project include:
 - **Client-side Validation:** Employs custom JavaScript for immediate feedback on user inputs during form validation.
 - **Optimized Layout:** Adjustments and code optimizations contribute to a clean and efficient website structure.
 
-## Development Process
+Development Process
 
 The development of the TSoul website emphasized a semantic HTML structure, custom CSS styling for visual aesthetics, and JavaScript integration for dynamic functionality and user interaction. Highlights of the development process include:
 
